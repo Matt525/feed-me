@@ -1,8 +1,6 @@
 import users from '../users';
 import styled from 'styled-components';
 import {saveToStorage} from '../utils/storage';
-
-
 const Main = styled.main`
   background-color: #29335C;
   display: flex;
@@ -48,6 +46,9 @@ const Main = styled.main`
         margin: 10px auto;
       }
     }
+    span { 
+      letter-spacing: 0.17em;
+    }
   }
   @keyframes push{
     50%  {transform: scale(0.8);}
@@ -62,7 +63,6 @@ const Main = styled.main`
             window.location.href = '/home';
             document.getElementsByClassName(users).classList.add('')
         }
-
         return(
       <Main>
           <h1>Select a profile</h1>
@@ -81,8 +81,4 @@ const Main = styled.main`
         </Main>
 
         )
-
-
-
-
     }
