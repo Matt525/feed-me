@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -7,12 +8,10 @@ display: flex;
 justify-content: center;
 padding-top: 100px;
 background-color: #29335C;
-
-
 `
 
 const Home = () => { 
-        return(
+        return( 
                 <div>
                         <h1>This is the home page</h1>
                 </div>

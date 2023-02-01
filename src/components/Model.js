@@ -37,7 +37,6 @@ const Backdrop = styled.div`
 export default function Model({className,children,onClickOutside}) { 
 
 <Container>
-
     <Backdrop onClick={()=> onClickOutside()}>
         <div className={classNames('modal', className)}>
             <button onClick={onClickOutside} className="close-btn">
@@ -46,7 +45,6 @@ export default function Model({className,children,onClickOutside}) {
             {children}
         </div>
     </Backdrop>
-
 </Container>
 
 }
